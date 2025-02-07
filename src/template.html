@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    >
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1 class="header1">Form</h1>
+    <div class="form-container">Please fill out this form
+        <form action="." novalidate>
+            <fieldset>
+                <legend>Fill all required fields</legend>
+                <p class="form-boxes">
+                     <label for="userEmail">E-mail</label>
+                     <input type="email" name="userEmail" id="userEmail" class="userInputs">
+                </p>
+                <p class="form-boxes">
+                    <label for="userCountry">Select your country</label>
+                    <select name="userCountry" id="userCountry" class="userInputs">
+                        <option value="argentina">Argentina</option>
+                        <option value="unitedStates">United States</option>
+                        <option value="spain">Spain</option>
+                    </select>
+                </p>
+                <p class="form-boxes">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" name="zipCode" id="zipCode" class="userInputs">
+                </p>
+                <p class="form-boxes">
+                    <label for="userPassword">Password</label>
+                    <input type="password" name="userPassword" id="userPassword" class="userInputs">
+                </p>
+                <p class="form-boxes">
+                    <label for="confirmPassword">Confirm your password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" class="userInputs">
+                </p>
+            </fieldset>
+            <section id="button-section">
+                <p>
+                    <button type="button" id="submitButton">Submit</button>
+                </p>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
