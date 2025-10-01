@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    >
+    
     <link rel="stylesheet" href="style.css">
     <title>Form Validation</title>
 </head>
 <body>
     <h1 class="header1">Form</h1>
     <div class="form-container">Please fill out this form
-        <form action="." novalidate>
+        <form action="." novalidate id="myForm">
             <fieldset>
                 <legend>Fill all required fields</legend>
                 <p class="form-boxes">
@@ -20,6 +20,7 @@
                 <p class="form-boxes">
                     <label for="userCountry">Select your country</label>
                     <select name="userCountry" id="userCountry" class="userInputs">
+                        <option value="blank">Please select a country</option>
                         <option value="argentina">Argentina</option>
                         <option value="unitedStates">United States</option>
                         <option value="spain">Spain</option>

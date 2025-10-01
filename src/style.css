@@ -1,0 +1,34 @@
+.header1{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50em;
+}
+.invalid{
+    border-color:red;
+    border-width: 2px;
+}
+.valid{
+    border-color: blue;
+    border-width: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
